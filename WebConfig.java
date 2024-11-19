@@ -1,13 +1,14 @@
 package com.baeldung.sample.config;
+import static org.springframework.http.HttpStatus.*;
 
 import com.baeldung.sample.filters.TrailingSlashRedirectFilterReactive;
 import jakarta.servlet.Filter;
-import org.springframework.web.filter.UrlHandlerFilter;
 import org.springframework.web.server.WebFilter;
-import org.springframework.http.HttpStatus;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.filter.UrlHandlerFilter;
+import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.baeldung.sample.filters.TrailingSlashRedirectFilter;
 
